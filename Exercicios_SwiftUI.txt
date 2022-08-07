@@ -1,0 +1,119 @@
+Labels
+1 Crie aplicação gráfica com 8 labels organizadas na vertical.
+Na 1 label aplique o padding pre-definido
+Na 2 label aplique um padding global de 15pts
+Na 3 label aplique um padding em cima de 15pts
+Na 4 label aplique um padding em baixo de 15pts
+Na 5 label aplique um padding a Esqueda de 15pts
+Na 6 label aplique um padding a direita de 15pts
+Na 7 label aplique um padding em cima e a esquerda de 15pts
+Na 8 label aplique um padding em baixo e a direita de 15pts
+
+Text("Padding global pré definido")
+.padding()
+Text ("Padding global de 15 pts")
+.padding(.all,15)
+Text ("Padding em cima 15 pts")
+.padding (. top, 15)
+Text ("Padding embaixo de 15 pts")
+.padding(.bottom,15)
+Text (“Padding a esquerda de 15 pts")
+.padding(.leading,15)
+Text ("Padding a direita 15 pts")
+.padding(.trailing,15)
+Text ("Padding em cima e a esquerda de 16 pts")
+.padding(EdgeInsets(top:15,
+leading:15, bottom:0,
+trailing:0))
+Text ("Padding em baixo e a direita de 15 pts")
+.padding(EdgeInsets(top:0,
+leading=0, bottom:15, trailing:15))
+
+
+
+2 Crie aplicação gráfica com 2 label organizadas na horizontal.
+Aplique a cada label, uma frame de 100x100, na label da esquerda defina um fundo azul e
+na da direita um fundo verde.
+
+
+
+
+3 - Crie aplicação gráfica com 2 label organizadas na vertical.
+Defina uma frame de 100x100 em cada, afaste a label de baixo 25pts
+
+4 - Crie aplicação gráfica com 5 label organizadas na vertical.
+Aplique a cada label, uma frame de 100x100, deve escrever texto nas labels
+O texto da 1 deve estar alinhado a esquerda
+O texto da 2 deve estar alinhado a direita
+O texto da 3 deve estar alinhado em cima
+O texto da 4 deve estar alinhado em cima
+O texto da 5 deve estar alinhado em cima e a esquerda
+
+
+5 - Crie aplicação gráfica com 2 label organizadas na vertical.
+Aplique a cada label, uma frame de 200x200, deve escrever texto nas labels
+O texto da 1 deve estar alinhado a cima e a esquerda, aplique o padding antes da frame
+O texto da 5 deve estar alinhado em cima e a esquerda, aplique o padding depois da frame
+
+6 - Crie aplicação gráfica com 2 label.
+Defina na 1:
+Uma frame
+Padding
+Cor de fundo
+Cor da font
+Defina na 2:
+Cor de fundo
+Cor da font
+Uma frame
+Padding
+Btns
+
+
+7 - Crie aplicação gráfica com 1 botão.
+personalize o aspecto gráfico do botão sei gosto
+
+
+
+8 - Crie aplicação gráfica com 1 botão.
+personalize o aspecto gráfico do botão sei gosto, aspeto gráfico deve ser criado num
+ficheiro a parte
+	 
+
+9 - Crie aplicação gráfica com 1 botão.
+personalize o aspecto gráfico do botão sei gosto
+faça o pint na consola de uma mensagem
+10 - Crie aplicação gráfica com 1 botão e uma label.
+ao pressionar o botão alter o texto da label
+11 - Crie aplicação gráfica com 1 botão e duas labels.
+Graficamente deve ter os dois botões lado a lado e a label por cima
+Ao carregar no 1º botão mostra o conteúdo da label.
+Ao carregar no 2º botão remova o conteúdo da label
+12- Crie aplicação gráfica com 1 botão e duas labels.
+Graficamente deve ter os dois botões lado a lado e a label por cima
+Ao carregar no 1º botão mostra a label.
+Ao carregar no 2º botão ocultar a label.
+13 - Crie aplicação gráfica com 1 botão com ações diferentes para long press e tap
+Textfield
+14 - Crie aplicação gráfica com uma textfield e personalize graficamente a textfield
+15 - Crie aplicação gráfica com 1 label e uma textfield, garanta que ao alterar o conteúdo
+da textfield altera também o conteúdo da label.
+16 - Crie aplicação gráfica com 1 label e uma textfield e um botão. Ao clicar no botão o
+conteúdo da textfield deve ser mostrado na label e a textfield limpa, se a textfield estiver
+vazia a aplicação na faz nada
+17 - crie o jogo GuessTheNumber, onde a aplicação gera um número aleatório e o utilizador
+têm de o tentar descobrir
+Ao receber uma tentativa do utilizador, a aplicação deve indicar se o valor inserido e
+superior ou inferior ao numero gerado
+Slideres
+18 - crie uma aplicação gráfica com um slider com valores entre 0 e 100
+19 - crie uma aplicação gráfica com um slider com valores entre 0 e 100 e ao mudar o
+valor selecionado no slider deve imprimir esses valores na consola 
+
+20 - crie uma aplicação gráfica com um slider com valores entre 0 e 100 e uma label, a
+label deve mostrar sempre o valor selecionado no slider
+21 - crie uma aplicação com retângulo com 300 x 300 e 4 slideres (RGBA). A cor de fundo
+do retângulo deve corresponder ao valor RGBA gerado pelos slideres.
+22 crie uma aplicação GuessTheColor
+a aplicação deve ter dois blocos com cor:
+	 	 um para a cor gerada
+	 	 um para proposta pelo utilizador 

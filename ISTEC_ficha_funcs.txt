@@ -1,0 +1,93 @@
+import Foundation
+
+
+//1- Crie um script em swift que: 
+//• receba 2 números
+//• indique qual o maior e menor
+//• some os 2 números
+//• verifique se o resultado da soma e impar
+//• eleve o 1º ao 2º
+
+
+func maiorq(num1:Int, num2:Int){
+    if num1 > num2{
+        print(" O \(num1) é maior que \(num2)") 
+    }else{
+        print(" O \(num2) é maior que \(num1)") 
+    }
+ }
+
+func soma(num1:Int, num2:Int) {
+    var soma_total = num1 + num2
+    print("A soma é \(soma_total)")
+}
+
+
+func parimp(numpar1:Int, numpar2:Int){
+
+    if ((numpar1 + numpar2) % 2) == 0{
+        print(" a soma de \(numpar1) mais \(numpar2) é par")
+    }else{
+        print(" a soma de \(numpar1) mais \(numpar2) é impar")
+    }
+}
+
+func elev(num1:Int,num2:Int){
+  var elev = num1 * num2
+    print(" O numero \(num1) elevado a \(num2) é \(elev)")
+ }
+
+
+
+
+// 2 - Crie um script em swift que calcule a formula resolvente 
+
+func resolv(valor_b:Int,valor_a:Int, valor_c:Int){
+ 
+  var delta:Int = (valor_b * valor_b) - ( 4 * valor_a * valor_c)
+
+  if delta < 0{
+      print("O valor de Delta é de \(delta)")
+      print("não é possivel realizar o calculo")
+  }else{
+      var  x11:Double =  Double(-1 * valor_b) - ( sqrt(Double(delta)))
+      var x12:Double = ( x11 / 2 * Double(valor_a))
+      var x21:Double = Double( -1 * valor_b) +  ( sqrt(Double(delta)))
+      var x22:Double = ( x21 / 2 * Double(valor_a))
+
+      print("O valor de delta é \(delta)")
+      print("O valor de x' é \(x12)")
+      print("e o de x'' é de \(x22)")
+  }
+
+}
+
+
+var a = 10
+var b = 20
+
+resolv(valor_b:30,valor_a:10, valor_c:10)
+
+
+
+//3 - Crie um script em swift que resolva uma regra de 3 simples
+
+//4 - Crie um script em swift que:
+//• receba 2 números
+//• some números entre esses 2 valores
+
+//5 - Crie um script em swift que:
+//• receba 2 números
+//• some todos os pares entre esses 2 valores
+
+//6 - Crie um script que recebendo um array devolva o maior e menor valor
+
+//7 - Crie um script em swift que:
+//• receba 2 números
+//• some todos os multiplos de 2 e 5 entre os 2 números
+
+//8 - Calcular a sequência e de Fibonacci ate um dado valor. F = (n-1)+(n-2)
+
+//9 - crie um script que permita calcular o factorial (n! = n × (n − 1) × ... × 3 × 2 × 1)
+
+//10 - crie uma simulação do jogo pedra papel tesoura 

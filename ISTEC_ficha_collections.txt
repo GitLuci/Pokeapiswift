@@ -1,0 +1,173 @@
+import Foundation
+
+
+//1-Crie uma array com todos os números pares de 0 a 100
+var pares:[Int]=[]
+
+var impar: [Int] = [0]
+
+func parimp(num:Int){
+
+    if (num % 2) == 0{
+        pares.append(num)
+    }else{
+        impar.append(num)
+    }
+    
+    
+}
+
+
+for a in 0...100 {
+    parimp(num:a)
+}
+
+
+
+
+print("a lista pares tem \(pares.count) numeros, sendo eles:")
+print(pares)
+print("a lista impar tem \(impar.count) numeros, sendo eles:")
+print(impar)
+
+//2. Some todos os elementos do array criado no ex 1
+var somapar: Int 
+somapar = 0
+
+for a in pares{
+    somapar = somapar + a
+    //print("O valor da soma é \(somapar) e o valor somado foi o \(a)")
+}
+
+var somaimpar: Int
+somaimpar = 0
+
+for b in impar{
+    somaimpar = somaimpar + b
+    //print("O valor da soma é \(somaimpar) e o valor somado foi o \(b)")   
+}
+
+print("O valor da soma dos numeros pares é \(somapar) ")
+print("O valor da soma dos numeros impares é \(somaimpar) ")
+
+var cont:Int = 0
+var c:Int = 0
+var d:Int = 0
+var num1:Int = 0
+var num2:Int = 0
+var somatudo:Int = 0
+var pares2:[Int] = pares
+var impar2:[Int] = impar
+
+
+
+//3. Crie uma array com todos os números impares de 0 a 100 e some posição a posição com
+array criado no ex 1
+while (cont < 51){
+
+for c in pares2{
+    num1 = c
+    pares2.remove(at:0)
+    break
+}
+
+for d in impar2{
+    num2 = d
+    impar2.remove(at:0)
+    break
+}
+
+somatudo = somatudo + (num1 + num2)
+cont = cont + 1
+
+print("Somando o impar \(num2) mais o par \(num1), valor cumulativo de \(somatudo)")
+
+}
+
+//4. Crie um array com N números random e ordene-os 
+var numrand:[Int] = []
+for i in 0...10{
+    let rand = Int.random(in: 0 ... 30)
+    numrand.append(rand)
+}
+numrand.sort()
+print(numrand)
+
+//5. Recorrendo aos arrays dos ex 1 e 3 some o valor da posição n do array 1
+//com a o valor da posição n + 1 do array 2
+
+func pos(n:Int){
+var jhg:Int
+
+jhg = pares[n] + impar[n+1] 
+
+print("sua posição é \(n) a soma de \(pares[n]) mais \(impar[n+1]) é de \(jhg)")
+
+}
+
+pos(n:2)
+
+//6 
+
+var sett: Set<Int> = []
+
+//adicionar 50 numeros ao set entre os numeros 0 e 50
+for i in 0...50{
+    let rand = Int.random(in: 0 ... 50)
+    sett.insert(rand)
+}
+
+print("O set possui os numeros")
+print(sett)
+
+
+//7
+
+let receita1: Set = ["cafe", "açucar", "agua", "canela"]
+let receita2: Set = ["canela", "agua", "leite", "chocolate"]
+
+//mostrar os valores comuns nos sets
+print("Os valores comuns ambos os sets são:", receita1.intersection(receita2))
+
+//mostrar os diferentes valores nos sets
+print("Os valores diferentes dos sets são:", receita1.subtracting(receita2), receita2.subtracting(receita1))
+
+//8. Crie um dicionário <número, nota> e adicione 10 alunos,
+
+var alunotas:[String:Int] = ["111":10, "222":18, "333":20,"444":10, "555":6, "666":12,"777":7, "888":9, "999":15,"000":20]
+
+
+
+var notas:[Int] = []
+var notasmaior:[Int] = []
+for v in alunotas.values{
+    notas.append(v)
+}
+//8.2.liste todos os alunos
+print("Nomes dos alunos: ", alunotas.keys)
+
+//8.3.liste todas as notas
+print("as notas dos alunos são \(notas)")
+
+//8.1.mostre os alunos com mais que 10 valores
+for h in notas{
+    if (h > 10){
+    notasmaior.append(h)
+        print("as notas acima de 10 são: \(h)")
+    }
+}
+
+
+//Tentativa de finalizar o exercicio
+
+//print(notasmaior)
+//var contmaior:Int = notasmaior.count
+//var nota1:Int = 0
+//var nota2:Int = 0
+//while (cont < contmaior){
+//for notasmaior[0] in  
+//for c in alunotas.values{
+//    nota1 = c
+//    notasmaior.remove(at:0)
+//    break
+//}

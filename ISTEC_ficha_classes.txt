@@ -1,0 +1,28 @@
+//1 - Implemente um “carro”
+
+class carro{
+	private var marca:String
+	private var ano:ano:Int
+//construtor vazio para inicializar 
+	init(){
+	self.marca=””
+	self.ano=0
+ 		}
+init(nome:String,ano:Int){
+	self.marca=nome
+	self.ano=ano
+}
+}
+
+let bmw = Carro(nome:”bmw”, ano:2000)
+
+
+//2- Implemente um “vendedor”
+
+//3 - Implemente um “cliente”
+
+//4- Crie uma simulação de um stand de automóveis
+//Requisitos:
+//• Deve ser possível vender e comprar veículos,
+//• Fazer pedidos de veículos.
+//• Quando um veiculo e colocando a venda caso exista algum pedido para o mesmo deve lançar um alerta, esse alerta pode ou não resultar numa venda 
